@@ -3,7 +3,7 @@
 - Would be for internal use. 
 
 ## Challenges
-- This was my first time using the Airtable API and a considerable amount of work went into working out how to retrieve the datat. 
+- This was my first time using the Airtable API and a considerable amount of work went into working out how to retrieve the data. 
 - Once this was achieved, Airtable sends data in batches of 100 which made it difficult to manipulate the true information on the frontend in react. 
 
 ## What is still left to do? What would I improve?
