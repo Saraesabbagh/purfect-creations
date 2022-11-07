@@ -5,7 +5,7 @@ export const Orders = () => {
 
   useEffect(() => {
     fetch(
-      "https://api.airtable.com/v0/app8wLQrrIMrnn673/orders?api_key=keyC4C28eqXe5e596"
+      "https://api.airtable.com/v0/app8wLQrrIMrnn673/tblZBNaHCGVfA9xw1?api_key=keyC4C28eqXe5e596"
     )
       .then((res) => res.json())
       .then((data) => {
