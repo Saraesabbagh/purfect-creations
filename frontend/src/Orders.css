@@ -1,0 +1,36 @@
+.topStats{
+  border: 2px solid;
+  margin: 40px;
+  margin-left: 180px;
+  margin-right: 180px;
+  padding: 50px
+
+}
+
+.topDashboard{
+  border: 2px solid;
+
+}
+
+.top-spans{
+  margin: 30px;
+  font-size: 20px;
+  font-weight: bold;
+
+  padding-top: 30px;
+}
+
+.bottom-dashboard{
+  text-align: left;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.each-order{
+  border: 1px solid;
+  margin: 20px;
+  padding: 20px;
+  padding-left: 300px;
+  text-align: left;
+
+}
