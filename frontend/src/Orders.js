@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from "react";
 
 export const Orders = () => {
-  const [orders, setOrders] = useState({});
+  const [orders, setOrders] = useState([]);
+  // const [inProgress, setInprogress] = useState([])
 
   useEffect(() => {
     fetch(
@@ -17,8 +18,27 @@ export const Orders = () => {
       });
   }, []);
 
+  // const totalinProgress = () =>{
+  //   for(let i=0; i< orders.length; i++){
+  //     if(orders[i].fields.order_status === "in_progress"){
+  //         inProgress.push(orders)
+  //       }
+  //   }
+  //   return inProgress.length;
+  // }
+  // console.log(inProgress);
+  // console.log(totalinProgress);
+
+  console.log(orders[2].fields.order_status);
+  console.log(orders);
+
 return (
   <div>
+    <p>Total Orders: {orders.length}</p>
+    <p> Total Orders this month: ?</p>
+    <p> Total Order in progress: </p>
+    {/* <p> Revenue:{orders.price.reduce()} </p> */}
+    <p>  list of the most recent orders: </p>
     {orders.length > 0 ? (
       orders.map((record) => (
         <div>
