@@ -19,6 +19,11 @@ export const Orders = () => {
 
 return (
   <div>
+    <p>Total Orders: {orders.length}</p>
+    <p> Total Orders this month: ?</p>
+    <p> Total Order in progress: </p>
+    {/* <p> Revenue:{orders.price.reduce()} </p> */}
+    <p> list of the most recent orders: </p>
     {orders.length > 0 ? (
       orders.map((record) => (
         <div>
