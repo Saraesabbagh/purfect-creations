@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from "react";
+import axios from 'axios';
 
 export const Orders = () => {
   const [orders, setOrders] = useState({});
-
+  let resp = [];
   useEffect(() => {
     fetch(
       "https://api.airtable.com/v0/app8wLQrrIMrnn673/orders?api_key=keyC4C28eqXe5e596"
@@ -16,6 +17,24 @@ export const Orders = () => {
         console.log(error);
       });
   }, []);
+
+  try {
+     do{
+        let params = {offset: " "};
+        axios.get(
+            "https://api.airtable.com/v0/app8wLQrrIMrnn673/orders?api_key=keyC4C28eqXe5e596",
+            { params: params })
+          .then((response) => {
+            for (let item of response.data.records) resp.push(item);
+            if (response.data.offset) params.offset = response.data.offset;
+            else params.offset = "";
+          });
+    }while(params.offset !== "");
+  } catch(error) {
+        console.error(error)
+  } 
+
+  console.log(resp);
 
 return (
   <div>
@@ -35,7 +54,7 @@ return (
       <p>Fetching Data...</p>
     )}
   </div>
-);
+  );
  
 }
 
