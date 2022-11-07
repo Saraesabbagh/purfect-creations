@@ -1,0 +1,24 @@
+{
+  "name": "purfect-creations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saraesabbagh/purfect-creations.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saraesabbagh/purfect-creations/issues"
+  },
+  "homepage": "https://github.com/Saraesabbagh/purfect-creations#readme",
+  "dependencies": {
+    "airtable": "^0.11.5",
+    "jest": "^29.2.2"
+  }
+}
