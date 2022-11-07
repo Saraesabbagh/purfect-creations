@@ -2,6 +2,25 @@
 - Interesting tech challenge set to take an Airtable api and create a dashboard for the customer to get insight or her top stats that will update as she edits her Airtable base. 
 - Would be for internal use. 
 
+## User Story
+````
+Alice has recently started a business selling 3D printed jewellery for cats. 
+
+As you would expect business is booming and Alice wants to keep track of the success of the business with a metrics dashboard.
+
+She is currently managing her orders in a spreasheet in Airtable, and would like to continue to be able to do so.
+
+She would like her dashboard to contain some key figures, such as:
+    • Total Orders
+    • Total Orders this month
+    • Number of orders in progress
+    • Revenue
+    • A list of the most recent few orders
+
+````
+
+
+
 ## Challenges
 - This was my first time using the Airtable API and a considerable amount of work went into working out how to retrieve the data. 
 - Once this was achieved, Airtable sends data in batches of 100 which made it difficult to manipulate the true information on the frontend in react. 
